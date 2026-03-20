@@ -62,7 +62,7 @@ namespace VCE_Fishing
 
         public static float ModifyRareCatchesChance(Pawn pawn)
         {
-            float rareChance = VCE_Fishing_Settings.VCEF_chanceForSpecials / 100;
+            float rareChance = (float)VCE_Fishing_Settings.VCEF_chanceForSpecials / 100;
 
             rareChance += pawn.GetStatValue(InternalDefOf.VCEF_FishingLuckOffset);
 
